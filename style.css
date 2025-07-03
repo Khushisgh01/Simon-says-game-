@@ -1,0 +1,247 @@
+body {
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: url("https://tse3.mm.bing.net/th/id/OIP.ysnDViyk3QvB9J4uKJcdmwHaEo?pid=Api&P=0&h=180") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+body {
+  background: url("https://www.transparenttextures.com/patterns/cartographer.png") repeat;
+  background-color: #f0f8ff;
+  color: #333;
+}
+
+
+h1 {
+  font-size: 3rem;
+  margin-top: 20px;
+  text-shadow: 2px 2px #000;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px #222;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line-one,
+.line-two {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
+  border: 5px solid white;
+  margin: 1rem;
+  box-shadow: 0 0 20px #000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+  position: relative;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #5b6df5;
+  cursor: pointer;
+}
+.btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Background colors for visibility */
+.red {
+  background-color: #e74c3c;
+}
+.yellow {
+  background-color: #f1c40f;
+}
+.green {
+  background-color: #2ecc71;
+}
+.purple {
+  background-color: #9b59b6;
+}
+
+.btn img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  border-radius: 20%;
+}
+
+.flash {
+  border: 5px solid yellow;
+  transform: scale(1.1);
+}
+
+.userflash {
+  border: 5px solid limegreen;
+  transform: scale(1.1);
+}
+
+.label {
+  position: absolute;
+  bottom: 8px;
+  color: white;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+}
+h1 {
+  animation: bounceIn 1s ease;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.btn {
+  opacity: 0;
+  transform: scale(0.5);
+  animation: popIn 0.5s forwards;
+}
+
+.btn:nth-child(1) { animation-delay: 0.2s; }
+.btn:nth-child(2) { animation-delay: 0.4s; }
+.btn:nth-child(3) { animation-delay: 0.6s; }
+.btn:nth-child(4) { animation-delay: 0.8s; }
+
+@keyframes popIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.shake {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+.level-up {
+  animation: pulse 0.6s;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); color: yellow; }
+  100% { transform: scale(1); }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+    margin: 10px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin: 10px;
+  }
+
+  .btn-container {
+    gap: 0.5rem;
+  }
+
+  .line-one, .line-two {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn {
+    width: 130px;
+    height: 130px;
+    margin: 0.5rem;
+  }
+
+  .btn img {
+    border-radius: 10%;
+  }
+
+  .label {
+    font-size: 0.9rem;
+  }
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.line-one,
+.line-two {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+    margin: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    width: 120px;
+    height: 120px;
+    margin: 0.3rem;
+  }
+
+  .btn img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+  }
+
+  .label {
+    font-size: 0.85rem;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
